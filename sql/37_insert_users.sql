@@ -1,0 +1,78 @@
+USE taskmaster;
+
+INSERT INTO users
+(
+employee_code,
+first_name,
+last_name,
+full_name,
+email,
+phone,
+gender,
+date_of_birth,
+designation,
+department_id,
+password_hash
+)
+
+VALUES
+
+('EMP001',
+'Ravi',
+'Kumar',
+'Ravi Kumar',
+'ravi@taskmaster.com',
+'9876543210',
+'Male',
+'1990-05-12',
+'System Administrator',
+1,
+'admin@123'),
+
+('EMP002',
+'Priya',
+'Sharma',
+'Priya Sharma',
+'priya@taskmaster.com',
+'9876543211',
+'Female',
+'1992-04-15',
+'Project Manager',
+2,
+'pm@123'),
+
+('EMP003',
+'Anil',
+'Kumar',
+'Anil Kumar',
+'anil@taskmaster.com',
+'9876543212',
+'Male',
+'1995-03-20',
+'Senior Developer',
+2,
+'dev@123'),
+
+('EMP004',
+'Sneha',
+'Reddy',
+'Sneha Reddy',
+'sneha@taskmaster.com',
+'9876543213',
+'Female',
+'1997-11-02',
+'QA Engineer',
+3,
+'test@123'),
+
+('EMP005',
+'Kiran',
+'Rao',
+'Kiran Rao',
+'kiran@taskmaster.com',
+'9876543214',
+'Male',
+'1993-09-10',
+'DevOps Engineer',
+4,
+'devops@123');
