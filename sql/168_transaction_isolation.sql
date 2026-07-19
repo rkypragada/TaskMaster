@@ -1,0 +1,6 @@
+USE taskmaster;
+
+SELECT @@transaction_isolation;
+
+
+SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;

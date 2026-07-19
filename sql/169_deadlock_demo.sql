@@ -1,0 +1,11 @@
+START TRANSACTION;
+
+UPDATE tasks
+SET status='OPEN'
+WHERE task_id=1;
+
+START TRANSACTION;
+
+UPDATE tasks
+SET status='TESTING'
+WHERE task_id=2;
