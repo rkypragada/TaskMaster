@@ -2,15 +2,25 @@ package taskmaster.demo;
 
 public class P229_ProjectServiceDemo {
 
-    private P227_ProjectDAO dao = new P227_ProjectDAO();
+    public static void main(String[] args) {
 
-    public P228_Project findProject(String projectCode) {
+        P229_ProjectService service = new P229_ProjectService();
 
-        if (projectCode == null || projectCode.trim().isEmpty()) {
-            System.out.println("Invalid Project Code.");
-            return null;
+        P228_Project project = service.findProject("PRJ001");
+
+        if (project != null) {
+
+            System.out.println("====================================");
+            System.out.println("        PROJECT DETAILS");
+            System.out.println("====================================");
+            System.out.println(project);
+
+        } else {
+
+            System.out.println("Project Not Found.");
+
         }
 
-        return dao.getProjectByCode(projectCode);
     }
+
 }
